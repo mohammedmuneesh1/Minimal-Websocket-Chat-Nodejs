@@ -9,7 +9,7 @@ const app = express();
 const server = createServer(app);
 const io = new Server(server);
 
-app.use(express.static(__dirname + '/public'));
+// app.use(express.static(__dirname + '/public'));
 
 app.get('/chat1',(req,res)=>{
     res.sendFile(join(__dirname,'/views/chat1.html'))
